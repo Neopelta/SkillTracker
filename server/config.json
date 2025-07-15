@@ -1,0 +1,17 @@
+{
+    "website": {
+        "port": 3000
+    },
+
+    "database": {
+        "host": "127.0.0.1",
+        "user": "aaw",
+        "name": "aaw_database",
+        "port": 3306,
+        "options": {
+            "queueLimit": 0,
+            "waitForConnections": true,
+            "connectionLimit": 10
+        }
+    }
+}

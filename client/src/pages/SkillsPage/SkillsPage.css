@@ -1,0 +1,140 @@
+tr, td {
+    border: 1px solid #423d3d;
+    padding: 8px;
+    background-color: var(--primary-bg);
+}
+
+th {
+    background-color: #ff6037;
+    color: white;
+    padding: 12px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+#tab-skills {
+    width: max-content;
+    min-width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td {
+    font-size: 0.9em;
+    color: #333;
+}
+
+.checkbox-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-wrapper input[type="checkbox"] {
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+    #tab-skills {
+        width: 100%;
+        text-align: center;
+        margin: 20px auto;
+    }
+    #search-bar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #search-bar p {
+        margin: 0;
+    }
+
+    #search-bar input {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+#search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#search-bar input {
+    width: 200px;
+    padding: 5px;
+}
+
+.skills-container {
+    margin: 20px auto;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #ff6037 #f0f0f0;
+    overscroll-behavior-x: contain;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background-color: #ff6037;
+    border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: #ff4500;
+}
+
+.small-instruction {
+    display: block; 
+    text-align: center;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.name-link {
+    background: none;
+    border: none;
+    color: #c94f2e;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.name-link:hover {
+    background-color: #ff6037;
+    color: white;
+}
+
+.name-link:active {
+    transform: scale(0.98);
+}
+
+td .name-link {
+    width: 100%;
+    display: inline-block;
+}
