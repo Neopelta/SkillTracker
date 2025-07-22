@@ -295,8 +295,12 @@ mpf!updateskill Cooking 8
 ## Authors
 
 - **Maxime M.**
-- **Ronan PLUTA FONTAINE**
+- **Ronan P.F.**
 - **Victor F.**
+
+## Licence
+
+Academic project - Université de Poitiers (2024)
 
 ---
 
